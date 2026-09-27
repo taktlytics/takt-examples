@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "https://github.com/vskstudio/takt-wordpress/releases/latest/download/takt-analytics.zip",
+    "https://github.com/taktlytics/takt-wordpress/releases/latest/download/takt-analytics.zip",
     "https://downloads.wordpress.org/plugin/woocommerce.zip"
   ],
   "mappings": {

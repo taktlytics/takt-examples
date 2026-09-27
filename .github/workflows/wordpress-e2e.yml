@@ -1,7 +1,7 @@
 name: wordpress-e2e
 
 # The WordPress example boots a real WP + WooCommerce stack (Docker via wp-env)
-# and consumes the published Takt plugin release (vskstudio/takt-wordpress).
+# and consumes the published Takt plugin release (taktlytics/takt-wordpress).
 # Scoped to the `wordpress/**` path (plus this workflow) so the heavy Docker run
 # only fires when the WordPress example changes; `workflow_dispatch` stays for
 # manual reruns.

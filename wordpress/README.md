@@ -1,6 +1,6 @@
 # Takt WordPress example
 
-A real WordPress + WooCommerce site running the [Takt Analytics plugin](https://github.com/vskstudio/takt-wordpress), verified end-to-end with [Playwright](https://playwright.dev) against a mocked Takt ingest. It proves the two things the plugin promises:
+A real WordPress + WooCommerce site running the [Takt Analytics plugin](https://github.com/taktlytics/takt-wordpress), verified end-to-end with [Playwright](https://playwright.dev) against a mocked Takt ingest. It proves the two things the plugin promises:
 
 1. the Takt **snippet** is injected into `<head>` and fires a **pageview** beacon;
 2. a completed **WooCommerce order** sends a server-to-server **Purchase** event with revenue.
@@ -22,7 +22,7 @@ npm run e2e        # starts WP + WooCommerce, configures the plugin, runs Playwr
 
 `npm run e2e` does three things:
 
-1. `wp-env start` — boots WordPress, downloads WooCommerce and the Takt plugin (the [latest release ZIP](https://github.com/vskstudio/takt-wordpress/releases), per `.wp-env.json`);
+1. `wp-env start` — boots WordPress, downloads WooCommerce and the Takt plugin (the [latest release ZIP](https://github.com/taktlytics/takt-wordpress/releases), per `.wp-env.json`);
 2. `wp eval-file …/setup-wp.php` — points the plugin at the mock ingest (`domain=localhost`, localhost tracking on);
 3. `playwright test` — the mock ingest (`e2e/mock-ingest.cjs`) starts automatically as Playwright's `webServer`, then the specs run.
 
@@ -43,7 +43,7 @@ The S2S endpoint is `http://host.docker.internal:9911`, so the WordPress contain
 
 ## Running against a local plugin build
 
-Before a release is published, point `wp-env` at a locally built ZIP instead of the release URL. Unzip [`takt-wordpress`](https://github.com/vskstudio/takt-wordpress)'s `dist/takt-analytics.zip` into `./plugin/takt-analytics`, then add a `.wp-env.override.json` (git-ignored):
+Before a release is published, point `wp-env` at a locally built ZIP instead of the release URL. Unzip [`takt-wordpress`](https://github.com/taktlytics/takt-wordpress)'s `dist/takt-analytics.zip` into `./plugin/takt-analytics`, then add a `.wp-env.override.json` (git-ignored):
 
 ```json
 {

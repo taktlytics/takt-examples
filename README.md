@@ -21,7 +21,7 @@ Copy any folder, run it, and adapt.
 | [`php`](php) | [`vskstudio/takt-core-php`](https://packagist.org/packages/vskstudio/takt-core-php) | Plain PHP 8.1+, no framework |
 | [`laravel`](laravel) | [`vskstudio/takt-laravel`](https://packagist.org/packages/vskstudio/takt-laravel) | Laravel 11/12 |
 | [`symfony`](symfony) | [`vskstudio/takt-symfony`](https://packagist.org/packages/vskstudio/takt-symfony) | Symfony 6.4/7 bundle |
-| [`wordpress`](wordpress) | [`takt-wordpress`](https://github.com/vskstudio/takt-wordpress) | WordPress + WooCommerce, verified end-to-end |
+| [`wordpress`](wordpress) | [`takt-wordpress`](https://github.com/taktlytics/takt-wordpress) | WordPress + WooCommerce, verified end-to-end |
 
 ## Run one
 
