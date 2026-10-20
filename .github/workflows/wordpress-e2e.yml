@@ -39,6 +39,8 @@ jobs:
         run: npm ci
       - name: install playwright chromium
         run: npx playwright install --with-deps chromium
+      - name: unit tests for the plugin fetch script
+        run: npm run test:scripts
       - name: start WordPress + WooCommerce
         run: npm run env:start
       - name: configure the plugin
