@@ -17,6 +17,8 @@ return [
     'sample_rate' => 1, // fraction of visitors to track (0 to 1); lower it to sample
     'track_query' => true, // keep the query string on pageviews...
     'query_params' => ['utm_source', 'utm_medium', 'utm_campaign'], // ...but only these
+    'redact_routes' => [],
+    'redact_undecodable_paths' => true,
     // 'respect_dnt' => false, // disable the Do-Not-Track short-circuit
     // scrub_url is a JS function: set 'mode' => 'sdk' to render init({...}) and
     // uncomment the line below (it throws in cdn/inline/asset mode).
