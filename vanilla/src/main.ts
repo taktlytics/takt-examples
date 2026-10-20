@@ -4,6 +4,7 @@ import { init, track, pageview } from '@vskstudio/takt-core'
 // excludeLocalhost is disabled so events fire during local dev.
 init({
   domain: 'example.com',
+  endpoint: '/api/event',
   auto: true,
   notFound: true,
   excludeLocalhost: false,

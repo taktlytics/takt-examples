@@ -9,7 +9,7 @@ const app = createApp(App)
 // excludeLocalhost is disabled so events fire during local development.
 app.use(TaktPlugin, {
   domain: 'example.com',
-  endpoint: 'https://example.com/api/event',
+  endpoint: '/api/event',
   track404: true,
   excludeLocalhost: false,
   // Advanced options (Takt 0.5): keep the query string on pageviews, but only
