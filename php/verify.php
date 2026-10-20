@@ -1,7 +1,7 @@
 <?php
 
 // Smoke check run in CI: proves the published package resolves and the snippet
-// renders. Real apps don't need this file — see index.php and track.php.
+// renders. Real apps don't need this file. See index.php and track.php.
 
 require __DIR__ . '/vendor/autoload.php';
 

@@ -1,9 +1,9 @@
 # takt-examples
 
 
-> 📚 **Documentation** — [taktlytics.com/docs](https://taktlytics.com/docs)
+> 📚 **Documentation**: [taktlytics.com/docs](https://taktlytics.com/docs)
 
-Minimal, self-contained example apps for [Takt](https://www.npmjs.com/package/@vskstudio/takt-core) — a privacy-friendly, self-hosted analytics SDK — one per framework, for both JavaScript and PHP. Each app consumes the real published `@vskstudio/takt-*` (npm) or `vskstudio/takt-*` (Packagist) package and builds in CI.
+Minimal, self-contained example apps for [Takt](https://www.npmjs.com/package/@vskstudio/takt-core): a privacy-friendly, self-hosted analytics SDK. There is one app per framework, for both JavaScript and PHP. Each app consumes the real published `@vskstudio/takt-*` (npm) or `vskstudio/takt-*` (Packagist) package and builds in CI.
 
 Copy any folder, run it, and adapt.
 
@@ -47,7 +47,7 @@ The PHP examples render the browser snippet server-side; see each folder's
 
 WordPress is different: it needs a database, so the [`wordpress`](wordpress) example
 runs a real WP + WooCommerce stack in Docker (via `wp-env`) and verifies the plugin
-end-to-end with Playwright. See its [README](wordpress/README.md) — it needs Docker.
+end-to-end with Playwright. See its [README](wordpress/README.md). It needs Docker.
 
 Each example sets `excludeLocalhost: false` so events fire during local development (Takt's privacy default is `true`). Point `endpoint` at your own Takt instance to collect them.
 
@@ -70,11 +70,11 @@ plugin/config key, `data-*` attribute, or `init()` field):
 
 | Option | What it does |
 |--------|--------------|
-| `sampleRate` | Fraction of visitors to track (`0`–`1`); lower it to sample. |
+| `sampleRate` | Fraction of visitors to track (`0` to `1`); lower it to sample. |
 | `trackQuery` | Keep the query string on pageview paths instead of stripping it. |
 | `queryParams` | Allowlist of query params to keep when `trackQuery` is on. |
 | `scrubUrl` | A function that rewrites each URL before it is sent (dev-controlled). |
-| `enabled` | Master kill-switch — set to `false` to disable all tracking at runtime. |
+| `enabled` | Master kill-switch: set to `false` to disable all tracking at runtime. |
 | `tagged` | Autocapture clicks on `[data-takt-tag]` elements. |
 
 Where each option shows up: `vanilla` (`sampleRate`, `tagged`), `react` (`scrubUrl`,
@@ -84,7 +84,7 @@ Where each option shows up: `vanilla` (`sampleRate`, `tagged`), `react` (`scrubU
 
 `scrubUrl` is a function, so it can't be a `data-*` attribute or survive a JSON
 config island. In the JS wrappers it is a real prop; for PHP it requires the new
-`Mode::Sdk` renderer, which emits a full `import{init};init({…})` ES module — the
+`Mode::Sdk` renderer, which emits a full `import{init};init({…})` ES module. The
 [`php`](php) example shows `Mode::Sdk` + `scrubUrl`, and the
 [`laravel`](laravel)/[`symfony`](symfony) configs demonstrate the `data-*` options
 (with `scrub_url` + `mode: sdk` shown as a commented switch).
