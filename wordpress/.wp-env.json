@@ -1,13 +1,14 @@
 {
   "plugins": [
-    "https://github.com/taktlytics/takt-wordpress/releases/latest/download/takt-analytics.zip",
-    "https://downloads.wordpress.org/plugin/woocommerce.zip"
+    "./plugin/takt-analytics",
+    "./plugin/woocommerce"
   ],
   "mappings": {
     "wp-content/takt-e2e": "./e2e/wp"
   },
   "config": {
     "WP_DEBUG": true,
-    "WP_DEBUG_LOG": true
+    "WP_DEBUG_LOG": true,
+    "TAKT_PLAINTEXT_HOSTS": "host.docker.internal"
   }
 }

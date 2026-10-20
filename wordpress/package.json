@@ -3,12 +3,13 @@
   "private": true,
   "description": "Takt WordPress plugin example: WordPress + WooCommerce via wp-env, verified end-to-end with Playwright against a mocked Takt ingest.",
   "scripts": {
-    "env:start": "wp-env start",
+    "env:start": "node scripts/fetch-takt-plugin.mjs && wp-env start",
     "env:stop": "wp-env stop",
     "env:clean": "wp-env destroy",
     "setup": "wp-env run cli wp eval-file wp-content/takt-e2e/setup-wp.php",
-    "e2e": "wp-env start && npm run setup && playwright test",
-    "e2e:run": "playwright test"
+    "e2e": "npm run env:start && npm run setup && playwright test",
+    "e2e:run": "playwright test",
+    "test:scripts": "node --test scripts/fetch-takt-plugin.test.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",

@@ -22,9 +22,9 @@ npm run e2e        # starts WP + WooCommerce, configures the plugin, runs Playwr
 
 `npm run e2e` does three things:
 
-1. `wp-env start` — boots WordPress, downloads WooCommerce and the Takt plugin (the [latest release ZIP](https://github.com/taktlytics/takt-wordpress/releases), per `.wp-env.json`);
-2. `wp eval-file …/setup-wp.php` — points the plugin at the mock ingest (`domain=localhost`, localhost tracking on);
-3. `playwright test` — the mock ingest (`e2e/mock-ingest.cjs`) starts automatically as Playwright's `webServer`, then the specs run.
+1. `npm run env:start`: downloads the pinned Takt plugin and WooCommerce release ZIPs, checks each SHA-256 against `scripts/fetch-takt-plugin.mjs`, extracts them to `./plugin/`, then runs `wp-env start` to boot WordPress (per `.wp-env.json`);
+2. `wp eval-file …/setup-wp.php`: points the plugin at the mock ingest (`domain=localhost`, localhost tracking on);
+3. `playwright test`: the mock ingest (`e2e/mock-ingest.cjs`) starts automatically as Playwright's `webServer`, then the specs run.
 
 Stop everything with `npm run env:stop` (or `npm run env:clean` to wipe the instance).
 
@@ -41,14 +41,8 @@ Stop everything with `npm run env:stop` (or `npm run env:clean` to wipe the inst
 
 The S2S endpoint is `http://host.docker.internal:9911`, so the WordPress container reaches the mock ingest running on the host.
 
-## Running against a local plugin build
+## Pinning and running a local plugin build
 
-Before a release is published, point `wp-env` at a locally built ZIP instead of the release URL. Unzip [`takt-wordpress`](https://github.com/taktlytics/takt-wordpress)'s `dist/takt-analytics.zip` into `./plugin/takt-analytics`, then add a `.wp-env.override.json` (git-ignored):
+The Takt plugin and WooCommerce are pinned to explicit versions and SHA-256 digests in the `PLUGINS` list of [`scripts/fetch-takt-plugin.mjs`](scripts/fetch-takt-plugin.mjs). Bumping one means updating its version, URL and digest together. `npm run test:scripts` checks the pinning and the checksum guard.
 
-```json
-{
-  "plugins": ["./plugin/takt-analytics", "https://downloads.wordpress.org/plugin/woocommerce.zip"],
-  "mappings": { "wp-content/takt-e2e": "./e2e/wp" },
-  "config": { "WP_DEBUG": true }
-}
-```
+To test an unreleased plugin build instead, unzip [`takt-wordpress`](https://github.com/taktlytics/takt-wordpress)'s `dist/takt-analytics.zip` into `./plugin/` (so the folder is `./plugin/takt-analytics`) and run `npx wp-env start` directly, skipping the download. `./plugin/` is git-ignored.

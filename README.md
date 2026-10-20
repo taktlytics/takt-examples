@@ -51,6 +51,11 @@ end-to-end with Playwright. See its [README](wordpress/README.md) — it needs D
 
 Each example sets `excludeLocalhost: false` so events fire during local development (Takt's privacy default is `true`). Point `endpoint` at your own Takt instance to collect them.
 
+The examples send events to the relative path `/api/event`. `npm run dev` serves the example with Vite, which has no proxy to a Takt instance by default, so those events return 404 locally. Pick one of these two options during local development:
+
+- Proxy the path to your Takt instance in the Vite config: `server.proxy` with the key `/api/event`, `target` set to your Takt origin and `changeOrigin: true`.
+- Or set `endpoint` to the absolute URL of your Takt instance (for example `https://your-takt-instance.example/api/event`) for the local run only, and keep the relative path for production builds served next to Takt.
+
 ## First-party / anti-adblock
 
 Each example also ships a commented-out `scriptOrigin` option (JS init/component), `script_origin` (Laravel/Symfony config) or the `data-script-origin` attribute (browser snippet). When set, the tracker and event collection are served from a domain you control (e.g. `https://stats.example.com`), so ad-blockers can no longer tell analytics traffic apart from your own site. Uncomment the line and point it at your custom first-party Takt domain to enable it.
