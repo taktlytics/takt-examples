@@ -1,7 +1,7 @@
 <?php
 
 // Smoke check run in CI: boots the published service provider in a bare
-// container and renders the snippet. Real apps don't need this file — Laravel
+// container and renders the snippet. Real apps don't need this file. Laravel
 // auto-discovers the provider; see the controller and Blade view.
 
 require __DIR__ . '/vendor/autoload.php';

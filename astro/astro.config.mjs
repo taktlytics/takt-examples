@@ -9,7 +9,7 @@ import takt from '@vskstudio/takt-astro'
 export default defineConfig({
   integrations: [
     // Advanced options (Takt 0.5): keep only the listed query params on pageviews;
-    // scrubUrl (integration-only — it can't cross the <Takt /> JSON island) rewrites
+    // scrubUrl (integration-only: it can't cross the <Takt /> JSON island) rewrites
     // each URL before send. It is stringified at build time, so keep it self-contained.
     // scriptOrigin: 'https://stats.example.com' -> first-party : sert le tracker depuis votre domaine (anti-adblock)
     takt({

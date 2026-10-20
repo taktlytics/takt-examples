@@ -1,7 +1,7 @@
 <?php
 
 // Smoke check run in CI: loads the published bundle extension in a bare
-// container and renders the snippet. Real apps don't need this file — register
+// container and renders the snippet. Real apps don't need this file: register
 // TaktBundle in config/bundles.php; see the controller and Twig template.
 
 require __DIR__ . '/vendor/autoload.php';

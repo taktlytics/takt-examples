@@ -23,7 +23,7 @@ export default function App() {
         <h1>Takt React Example</h1>
         <BuyButton />
         <SignupButton />
-        {/* Autocaptured by `tagged` — no handler needed. */}
+        {/* Autocaptured by `tagged`: no handler needed. */}
         <button data-takt-tag="Newsletter">Join newsletter</button>
       </main>
     </Takt>
