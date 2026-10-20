@@ -1,7 +1,7 @@
 {
   "plugins": [
-    "https://github.com/taktlytics/takt-wordpress/releases/latest/download/takt-analytics.zip",
-    "https://downloads.wordpress.org/plugin/woocommerce.zip"
+    "./plugin/takt-analytics",
+    "./plugin/woocommerce"
   ],
   "mappings": {
     "wp-content/takt-e2e": "./e2e/wp"
