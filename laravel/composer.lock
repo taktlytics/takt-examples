@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dd415c0848de2fdbd454c045aef4e77",
+    "content-hash": "ac7559744f4c9b7685da4558c7b49631",
     "packages": [
         {
             "name": "brick/math",
@@ -5984,16 +5984,16 @@
         },
         {
             "name": "vskstudio/takt-core-php",
-            "version": "v0.6.1",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/taktlytics/takt-core-php.git",
-                "reference": "d7f335756bfd6646aa4c563fa4d1015eb04238f0"
+                "reference": "92746b48c182d454f492e7c72f5579578e8841b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/taktlytics/takt-core-php/zipball/d7f335756bfd6646aa4c563fa4d1015eb04238f0",
-                "reference": "d7f335756bfd6646aa4c563fa4d1015eb04238f0",
+                "url": "https://api.github.com/repos/taktlytics/takt-core-php/zipball/92746b48c182d454f492e7c72f5579578e8841b0",
+                "reference": "92746b48c182d454f492e7c72f5579578e8841b0",
                 "shasum": ""
             },
             "require": {
@@ -6003,7 +6003,7 @@
                 "psr/http-factory": "^1.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.59",
+                "friendsofphp/php-cs-fixer": "^3.95",
                 "nyholm/psr7": "^1.8",
                 "php-http/mock-client": "^1.6",
                 "phpstan/phpstan": "^1.11",
@@ -6038,27 +6038,27 @@
                 "issues": "https://github.com/taktlytics/takt-core-php/issues",
                 "source": "https://github.com/taktlytics/takt-core-php"
             },
-            "time": "2026-10-19T07:06:47+00:00"
+            "time": "2026-10-20T06:24:26+00:00"
         },
         {
             "name": "vskstudio/takt-laravel",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/taktlytics/takt-laravel.git",
-                "reference": "535e36063faf2cc13cbd1d758dca06f082a7bca1"
+                "reference": "a67bcbc30504a93836430891c62eb34166b6ff81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/taktlytics/takt-laravel/zipball/535e36063faf2cc13cbd1d758dca06f082a7bca1",
-                "reference": "535e36063faf2cc13cbd1d758dca06f082a7bca1",
+                "url": "https://api.github.com/repos/taktlytics/takt-laravel/zipball/a67bcbc30504a93836430891c62eb34166b6ff81",
+                "reference": "a67bcbc30504a93836430891c62eb34166b6ff81",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.8",
                 "illuminate/support": "^10.0 || ^11.0 || ^12.0",
                 "php": ">=8.1",
-                "vskstudio/takt-core-php": "^0.6.0"
+                "vskstudio/takt-core-php": "^0.7.0"
             },
             "require-dev": {
                 "laravel/pint": "^1.16",
@@ -6092,7 +6092,7 @@
                 }
             ],
             "description": "Laravel integration for Takt analytics: @takt Blade directive + Takt facade for server-side events.",
-            "homepage": "https://github.com/vskstudio/takt-laravel",
+            "homepage": "https://github.com/taktlytics/takt-laravel",
             "keywords": [
                 "analytics",
                 "blade",
@@ -6102,10 +6102,10 @@
                 "tracking"
             ],
             "support": {
-                "issues": "https://github.com/vskstudio/takt-laravel/issues",
-                "source": "https://github.com/vskstudio/takt-laravel"
+                "issues": "https://github.com/taktlytics/takt-laravel/issues",
+                "source": "https://github.com/taktlytics/takt-laravel"
             },
-            "time": "2026-09-27T16:59:21+00:00"
+            "time": "2026-10-20T06:27:47+00:00"
         }
     ],
     "packages-dev": [],
