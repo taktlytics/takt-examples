@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "php": ">=8.1",
-    "vskstudio/takt-core-php": "^0.3",
+    "vskstudio/takt-core-php": "^0.6.1",
     "nyholm/psr7": "^1.8",
     "symfony/http-client": "^6.4 || ^7.0"
   },
@@ -14,6 +14,7 @@
       "php-http/discovery": true
     },
     "platform": {
+      "php": "8.3.99"
     }
   },
   "scripts": { "build": "@php verify.php" },
