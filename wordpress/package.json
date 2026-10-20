@@ -9,7 +9,7 @@
     "setup": "wp-env run cli wp eval-file wp-content/takt-e2e/setup-wp.php",
     "e2e": "npm run env:start && npm run setup && playwright test",
     "e2e:run": "playwright test",
-    "test:scripts": "node --test scripts/"
+    "test:scripts": "node --test scripts/fetch-takt-plugin.test.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
