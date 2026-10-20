@@ -3,7 +3,7 @@
 
 > 📚 **Documentation**: [taktlytics.com/docs](https://taktlytics.com/docs)
 
-Minimal, self-contained example apps for [Takt](https://www.npmjs.com/package/@vskstudio/takt-core): a privacy-friendly, self-hosted analytics SDK. There is one app per framework, for both JavaScript and PHP. Each app consumes the real published `@vskstudio/takt-*` (npm) or `vskstudio/takt-*` (Packagist) package and builds in CI.
+Minimal, self-contained example apps for [Takt](https://www.npmjs.com/package/@vskstudio/takt-core), a privacy-friendly analytics SDK hosted in Europe. There is one app per framework, for both JavaScript and PHP. Each app consumes the real published `@vskstudio/takt-*` (npm) or `vskstudio/takt-*` (Packagist) package and builds in CI.
 
 Copy any folder, run it, and adapt.
 
