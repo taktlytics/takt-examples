@@ -8,7 +8,7 @@
     "symfony/framework-bundle": "^6.4 || ^7.0",
     "symfony/http-client": "^6.4 || ^7.0",
     "symfony/twig-bundle": "^6.4 || ^7.0",
-    "vskstudio/takt-symfony": "^0.7.0"
+    "vskstudio/takt-symfony": "^0.7.1"
   },
   "autoload": { "psr-4": { "App\\": "src/" } },
   "config": {

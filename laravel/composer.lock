@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac7559744f4c9b7685da4558c7b49631",
+    "content-hash": "e0735b3ac6b281023f0fa814c2b7e802",
     "packages": [
         {
             "name": "brick/math",
@@ -5984,16 +5984,16 @@
         },
         {
             "name": "vskstudio/takt-core-php",
-            "version": "v0.7.0",
+            "version": "v0.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/taktlytics/takt-core-php.git",
-                "reference": "92746b48c182d454f492e7c72f5579578e8841b0"
+                "reference": "e4ec174d869cc19403f8356b4bfc87e8a33356da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/taktlytics/takt-core-php/zipball/92746b48c182d454f492e7c72f5579578e8841b0",
-                "reference": "92746b48c182d454f492e7c72f5579578e8841b0",
+                "url": "https://api.github.com/repos/taktlytics/takt-core-php/zipball/e4ec174d869cc19403f8356b4bfc87e8a33356da",
+                "reference": "e4ec174d869cc19403f8356b4bfc87e8a33356da",
                 "shasum": ""
             },
             "require": {
@@ -6038,27 +6038,27 @@
                 "issues": "https://github.com/taktlytics/takt-core-php/issues",
                 "source": "https://github.com/taktlytics/takt-core-php"
             },
-            "time": "2026-10-20T06:24:26+00:00"
+            "time": "2026-10-20T16:59:08+00:00"
         },
         {
             "name": "vskstudio/takt-laravel",
-            "version": "v0.7.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/taktlytics/takt-laravel.git",
-                "reference": "a67bcbc30504a93836430891c62eb34166b6ff81"
+                "reference": "7c32b288491587dbe110c27ea45ae442a5165a3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/taktlytics/takt-laravel/zipball/a67bcbc30504a93836430891c62eb34166b6ff81",
-                "reference": "a67bcbc30504a93836430891c62eb34166b6ff81",
+                "url": "https://api.github.com/repos/taktlytics/takt-laravel/zipball/7c32b288491587dbe110c27ea45ae442a5165a3b",
+                "reference": "7c32b288491587dbe110c27ea45ae442a5165a3b",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.8",
                 "illuminate/support": "^10.0 || ^11.0 || ^12.0",
                 "php": ">=8.1",
-                "vskstudio/takt-core-php": "^0.7.0"
+                "vskstudio/takt-core-php": "^0.7.3"
             },
             "require-dev": {
                 "laravel/pint": "^1.16",
@@ -6105,7 +6105,7 @@
                 "issues": "https://github.com/taktlytics/takt-laravel/issues",
                 "source": "https://github.com/taktlytics/takt-laravel"
             },
-            "time": "2026-10-20T06:27:47+00:00"
+            "time": "2026-10-20T17:13:09+00:00"
         }
     ],
     "packages-dev": [],
