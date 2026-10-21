@@ -77,7 +77,7 @@ plugin/config key, `data-*` attribute, or `init()` field):
 | `enabled` | Master kill-switch: set to `false` to disable all tracking at runtime. |
 | `tagged` | Autocapture clicks on `[data-takt-tag]` elements. |
 | `redactRoutes` | Sensitive routes sent as their pattern instead of the real path, e.g. `['/verify/{token}']`. The PHP snippet needs `Mode::Sdk`. |
-| `redactUndecodablePaths` | Server-side only: `false` matches a path that cannot be decoded like any other instead of masking it as `/[redacted]`. Default `true`. |
+| `redactUndecodablePaths` | Browser SDK and server: `false` matches a path that cannot be decoded like any other instead of masking it as `/[redacted]`. Default `true`. |
 
 Where each option shows up: `vanilla` (`sampleRate`, `tagged`), `react` (`scrubUrl`,
 `tagged`), `vue` (`trackQuery`, `queryParams`), `svelte` (`scrubUrl`), `solid`
