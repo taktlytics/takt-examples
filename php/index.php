@@ -24,6 +24,7 @@ $snippet = (new SnippetRenderer(new Options(
     trackQuery: true, // keep the query string on pageviews...
     queryParams: ['utm_source', 'utm_medium', 'utm_campaign'], // ...but only these params
     scrubUrl: '(u) => u.split("#")[0]', // raw JS, Mode::Sdk only: here, drop the #fragment
+    redactRoutes: ['/verify/{token}', '/reset/{code}'],
 )))->render();
 
 ?>

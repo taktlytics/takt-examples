@@ -11,6 +11,8 @@ init({
   // Advanced options (Takt 0.5):
   sampleRate: 1, // fraction of visitors to track (0 to 1); lower it to sample, e.g. 0.25
   tagged: true, // autocapture clicks on [data-takt-tag] elements
+  redactRoutes: ['/verify/{token}', '/reset/{code}'],
+  redactUndecodablePaths: true,
   // scriptOrigin: 'https://stats.example.com', // first-party : sert le tracker depuis votre domaine (anti-adblock)
 })
 

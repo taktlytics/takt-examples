@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vskstudio/takt-core": "^0.11.2",
-    "@vskstudio/takt-svelte": "^0.9.1"
+    "@vskstudio/takt-core": "^0.12.3",
+    "@vskstudio/takt-svelte": "^0.10.2"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.1.1",

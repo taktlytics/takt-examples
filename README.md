@@ -76,11 +76,13 @@ plugin/config key, `data-*` attribute, or `init()` field):
 | `scrubUrl` | A function that rewrites each URL before it is sent (dev-controlled). |
 | `enabled` | Master kill-switch: set to `false` to disable all tracking at runtime. |
 | `tagged` | Autocapture clicks on `[data-takt-tag]` elements. |
+| `redactRoutes` | Sensitive routes sent as their pattern instead of the real path, e.g. `['/verify/{token}']`. The PHP snippet needs `Mode::Sdk`. |
+| `redactUndecodablePaths` | Browser SDK and server: `false` matches a path that cannot be decoded like any other instead of masking it as `/[redacted]`. Default `true`. |
 
 Where each option shows up: `vanilla` (`sampleRate`, `tagged`), `react` (`scrubUrl`,
 `tagged`), `vue` (`trackQuery`, `queryParams`), `svelte` (`scrubUrl`), `solid`
 (`sampleRate`), `angular` (`tagged`), `astro` (`trackQuery`, `queryParams`,
-`scrubUrl`).
+`scrubUrl`). `vanilla` and `php` also show `redactRoutes`, and `redactUndecodablePaths` appears in `vanilla`, `php`, `laravel` and `symfony`.
 
 `scrubUrl` is a function, so it can't be a `data-*` attribute or survive a JSON
 config island. In the JS wrappers it is a real prop; for PHP it requires the new

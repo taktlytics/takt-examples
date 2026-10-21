@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f87ff01185ed2cbd3ffb8b294196124a",
+    "content-hash": "dcac853829194827f71ead22cca56205",
     "packages": [
         {
             "name": "nyholm/psr7",
@@ -2900,16 +2900,16 @@
         },
         {
             "name": "vskstudio/takt-core-php",
-            "version": "v0.6.1",
+            "version": "v0.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/taktlytics/takt-core-php.git",
-                "reference": "d7f335756bfd6646aa4c563fa4d1015eb04238f0"
+                "reference": "e4ec174d869cc19403f8356b4bfc87e8a33356da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/taktlytics/takt-core-php/zipball/d7f335756bfd6646aa4c563fa4d1015eb04238f0",
-                "reference": "d7f335756bfd6646aa4c563fa4d1015eb04238f0",
+                "url": "https://api.github.com/repos/taktlytics/takt-core-php/zipball/e4ec174d869cc19403f8356b4bfc87e8a33356da",
+                "reference": "e4ec174d869cc19403f8356b4bfc87e8a33356da",
                 "shasum": ""
             },
             "require": {
@@ -2919,7 +2919,7 @@
                 "psr/http-factory": "^1.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.59",
+                "friendsofphp/php-cs-fixer": "^3.95",
                 "nyholm/psr7": "^1.8",
                 "php-http/mock-client": "^1.6",
                 "phpstan/phpstan": "^1.11",
@@ -2954,20 +2954,20 @@
                 "issues": "https://github.com/taktlytics/takt-core-php/issues",
                 "source": "https://github.com/taktlytics/takt-core-php"
             },
-            "time": "2026-10-19T07:06:47+00:00"
+            "time": "2026-10-20T16:59:08+00:00"
         },
         {
             "name": "vskstudio/takt-symfony",
-            "version": "v0.6.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/taktlytics/takt-symfony.git",
-                "reference": "2bea9fcf52d6065fe21b98a072938092223e021d"
+                "reference": "63cb30c09d754bde4f1e8cb0d04b6c555a90cb82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/taktlytics/takt-symfony/zipball/2bea9fcf52d6065fe21b98a072938092223e021d",
-                "reference": "2bea9fcf52d6065fe21b98a072938092223e021d",
+                "url": "https://api.github.com/repos/taktlytics/takt-symfony/zipball/63cb30c09d754bde4f1e8cb0d04b6c555a90cb82",
+                "reference": "63cb30c09d754bde4f1e8cb0d04b6c555a90cb82",
                 "shasum": ""
             },
             "require": {
@@ -2975,7 +2975,7 @@
                 "php": ">=8.1",
                 "symfony/framework-bundle": "^6.4 || ^7.0",
                 "symfony/http-client": "^6.4 || ^7.0",
-                "vskstudio/takt-core-php": "^0.6"
+                "vskstudio/takt-core-php": "^0.7.3"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.59",
@@ -2999,7 +2999,7 @@
                 }
             ],
             "description": "Symfony bundle for Takt analytics: takt() Twig function + autowired Takt service for server-side events.",
-            "homepage": "https://github.com/vskstudio/takt-symfony",
+            "homepage": "https://github.com/taktlytics/takt-symfony",
             "keywords": [
                 "analytics",
                 "privacy",
@@ -3009,10 +3009,10 @@
                 "twig"
             ],
             "support": {
-                "issues": "https://github.com/vskstudio/takt-symfony/issues",
-                "source": "https://github.com/vskstudio/takt-symfony"
+                "issues": "https://github.com/taktlytics/takt-symfony/issues",
+                "source": "https://github.com/taktlytics/takt-symfony"
             },
-            "time": "2026-09-27T16:59:29+00:00"
+            "time": "2026-10-20T17:13:16+00:00"
         }
     ],
     "packages-dev": [],
