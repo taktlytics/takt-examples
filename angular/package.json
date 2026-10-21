@@ -7,7 +7,7 @@
     "start": "ng serve"
   },
   "dependencies": {
-    "@angular/common": "^20.0.0",
+    "@angular/common": "^22.2.3",
     "@angular/compiler": "^20.0.0",
     "@angular/core": "^20.0.0",
     "@angular/platform-browser": "^20.0.0",
